@@ -17,4 +17,4 @@ Beginner Python exercises covering multiplication tables, star patterns, Fibonac
 Run a program with:
 
 ```bash
-python filename.py
+python multiplication_table.py
