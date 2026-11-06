@@ -1,0 +1,28 @@
+text = input("Enter a paragraph: ")
+
+# Convert to lowercase
+text = text.lower()
+
+# Remove punctuation
+for ch in ",.!":
+    text = text.replace(ch, "")
+
+# Split into words
+words = text.split()
+
+# Find unique words
+unique_words = set(words)
+
+# Count total and unique words
+print("Total words:", len(words))
+print("Unique words:", len(unique_words))
+
+# Identify repeated words
+print("Repeated words:")
+for word in sorted(unique_words):
+    if words.count(word) > 1:
+        print(word)
+
+# Display unique words alphabetically
+print("Unique words alphabetically:")
+print(sorted(unique_words))
